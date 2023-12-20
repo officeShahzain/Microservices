@@ -11,7 +11,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Document("rating")
+@Document("hotel_rating")
 public class Rating {
     @Id
     private String ratingId;

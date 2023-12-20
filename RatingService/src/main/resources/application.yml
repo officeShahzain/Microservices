@@ -1,8 +1,18 @@
+server:
+  port:
+    8082
+
 spring:
   data:
     mongodb:
     uri : mongodb://localhost:27017
-    database: rating_service
-server:
-  port:
-    8082
+    database: microservices
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:9000/eureka
