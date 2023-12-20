@@ -15,6 +15,7 @@ import java.util.List;
 public class UserController {
     @Autowired
     UserService userService;
+
     @PostMapping("/save")
     public ResponseEntity<User> createUser(@RequestBody User user)
     {
